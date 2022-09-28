@@ -3,6 +3,11 @@ public class Produto {
     private String fabricante;
     private double price;
 
+    public Produto(String name) {
+        this.name = name;
+    }
+
+
     public double getPrice() {
         return price;
     }
