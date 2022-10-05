@@ -3,8 +3,11 @@ public class Produto {
     private String fabricante;
     private double price;
 
-    public Produto(String name) {
+    public Produto(String name, String fabricante, double price) {
+
         this.name = name;
+        this.fabricante = fabricante;
+        this.price = price;
     }
 
 
@@ -18,5 +21,10 @@ public class Produto {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString(){
+        return "Nome: " + getName() +"; Fabricante: " + getFabricante() + "; Preço: " + getPrice();
     }
 }
